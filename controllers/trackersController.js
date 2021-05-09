@@ -5,8 +5,8 @@ const createTracker = async (req, res) => {
   const newTracker = new Tracker({
     name: req.body.name,
     gender: req.body.gender,
-    email: req.body.location,
-    password: req.body.services,
+    email: req.body.email,
+    password: req.body.password,
   });
 
   await newTracker.save();
